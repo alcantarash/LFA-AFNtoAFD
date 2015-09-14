@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author sheldon
  */
-public class TransformAFN {
+public class Main {
 
     /**
      * @param args the command line arguments
