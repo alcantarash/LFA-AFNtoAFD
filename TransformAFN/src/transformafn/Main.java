@@ -23,7 +23,9 @@ public class Main {
         String Alfabeto;
         ArrayList<String> Transicao = new ArrayList<>();
         String prox = arq.proximaPalavra();
-        AutomataFND afnd = new AutomataFND(); 
+        AutomataFND afnd = new AutomataFND();
+        String EstadoInicial;
+        String EstadoFinal;
 
         while (!prox.equals("EOF")) {
             if (prox.charAt(0) == 'E') {
@@ -60,12 +62,12 @@ public class Main {
              } else if (prox.charAt(0) == 'I') {//Estado Inicial
              EstadoInicial = prox.replaceAll(" ", "").replaceAll("\\(", "").replaceAll("\\)", "").replaceAll(":", "").replaceAll(",", "");
              for (int i = 2; i < EstadoInicial.length(); i++) {
-             afd.seteInicial("" + EstadoInicial.charAt(i));
+             afnd.seteInicial("" + EstadoInicial.charAt(i));
              }
              } else if (prox.charAt(0) == 'F') {//Estado Final
              EstadoFinal = prox.replaceAll(" ", "").replaceAll("\\(", "").replaceAll("\\)", "").replaceAll(":", "").replaceAll(",", "");
              for (int i = 2; i < EstadoFinal.length(); i++) {
-             afd.seteFinal("" + EstadoFinal.charAt(i));
+             afnd.seteFinal("" + EstadoFinal.charAt(i));
              }
              }
 
