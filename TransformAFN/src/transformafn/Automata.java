@@ -6,10 +6,6 @@
 package transformafn;
 import java.util.HashSet;
 
-/**
- *
- * @author Luis Alberto Pérez García
- */
 public abstract class Automata {
 
     protected String id;                    // Automata's IDentificator

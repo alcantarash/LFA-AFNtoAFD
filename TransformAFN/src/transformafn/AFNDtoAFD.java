@@ -9,10 +9,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Stack;
 
-/**
- *
- * @author Luis Alberto Pérez García
- */
 public class AFNDtoAFD {
 
     AutomataFND afnd;

@@ -9,12 +9,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-/**
- *
- * @author Luis Alberto Pérez García
- */
-
-// only one transition for echar pair (state, symbol)
 public class AutomataFD extends Automata {
 
     private HashMap<String, HashMap<String, String>> graph;
